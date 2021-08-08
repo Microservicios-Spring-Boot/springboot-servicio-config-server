@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8888/servicio-items/default",
+			"name": "Properties en config server DEFAULT",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -26,11 +26,60 @@
 			"response": []
 		},
 		{
+			"name": "Properties en config server DEV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/servicio-items/prod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"servicio-items",
+						"prod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Items_listar",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8005/obtener-config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8005",
+					"path": [
+						"obtener-config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items_listar_prod",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8007/obtener-config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8007",
+					"path": [
+						"obtener-config"
+					]
+				}
 			},
 			"response": []
 		},
@@ -39,7 +88,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8090/api/items/obtener-config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"items",
+						"obtener-config"
+					]
+				}
 			},
 			"response": []
 		}
