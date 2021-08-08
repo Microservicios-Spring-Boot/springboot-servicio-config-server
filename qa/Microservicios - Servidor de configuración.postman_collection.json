@@ -10,6 +10,35 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/servicio-items/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"servicio-items",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items_listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "apigateway_Items_listar",
+			"request": {
+				"method": "GET",
+				"header": [],
 				"url": null
 			},
 			"response": []
