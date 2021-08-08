@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "fa9e4598-3911-4d5c-ba03-7dc23a316c28",
+		"name": "Microservicios - Servidor de configuración",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8888/servicio-items/default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
