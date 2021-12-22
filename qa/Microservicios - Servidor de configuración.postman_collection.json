@@ -6,103 +6,148 @@
 	},
 	"item": [
 		{
-			"name": "Properties en config server DEFAULT",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8888/servicio-items/default",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8888",
-					"path": [
-						"servicio-items",
-						"default"
-					]
+			"name": "microservicio-items",
+			"item": [
+				{
+					"name": "Properties en config server DEFAULT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/servicio-items/defafult",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"servicio-items",
+								"defafult"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Properties en config server DEV",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/servicio-items/dev",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"servicio-items",
+								"dev"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Properties en config server PROD",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/servicio-items/prod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"servicio-items",
+								"prod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dev obtenerConfig",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8005/obtener-config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"obtener-config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Items_listar_prod",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8007/obtener-config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8007",
+							"path": [
+								"obtener-config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apigateway_obtenerConfig",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/items/obtener-config",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"items",
+								"obtener-config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actuator - ServicioItems",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8005/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8005",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Properties en config server DEV",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8888/servicio-items/prod",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8888",
-					"path": [
-						"servicio-items",
-						"prod"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Items_listar",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8005/obtener-config",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8005",
-					"path": [
-						"obtener-config"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Items_listar_prod",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8007/obtener-config",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8007",
-					"path": [
-						"obtener-config"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "apigateway_Items_listar",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8090/api/items/obtener-config",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8090",
-					"path": [
-						"api",
-						"items",
-						"obtener-config"
-					]
-				}
-			},
-			"response": []
+			]
 		}
 	]
 }
